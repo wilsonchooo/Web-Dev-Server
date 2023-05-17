@@ -20,6 +20,12 @@ const Campus = db.define("campus", {
 
   description: {
     type: Sequelize.STRING,
+  },
+  imageUrl: {
+    type: Sequelize.STRING,
+    allowNull:true,
+    defaultValue: 'https://upload.wikimedia.org/wikipedia/commons/e/ef/West_Building_Hunter_College_CUNY.jpg'
+
   }
 });
 
